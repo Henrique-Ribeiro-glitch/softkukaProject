@@ -1,3 +1,7 @@
+To run the project use this comands on terminal:
+yarn start
+yarn run nodemon index.js
+
 MIT License
 
 Copyright (c) 2021 Henrique-Ribeiro-glitch
