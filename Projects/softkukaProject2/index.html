@@ -1,0 +1,15 @@
+<body>
+    <main></main>
+</body>
+<script>
+    async function getContent(){
+        try {
+            const response = await fetch('http://localhost4000')
+            const data = await response.json()
+            show(data)
+        } catch (error) {
+            console.log(error)
+        }
+    }
+    getContent()
+</script>

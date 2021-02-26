@@ -1,0 +1,25 @@
+{
+  "name": "softkukaproject2",
+  "version": "2.0.0",
+  "description": "The test of softkuka company, now with front-end",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Henrique-Ribeiro-glitch/softkukaCompany.git"
+  },
+  "author": "Henrique Júnior de Oliveira Ribeiro",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Henrique-Ribeiro-glitch/softkukaCompany/issues"
+  },
+  "homepage": "https://github.com/Henrique-Ribeiro-glitch/softkukaCompany#readme",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "nodemon": "^2.0.7"
+  }
+}
