@@ -9,32 +9,34 @@ server.get("/", (request, response) => {
     return response.send({ message: "Welcome and may the force be with you" });
 });
 
-server.get("/swapi1", async (request, response) => {
+server.get("/people", async (request, response) => {
     try {
-        const { data } = await api.get("people/1/");
+        const { data } = await api.get("people/");
         
         return response.send({ data })
     } catch (error) {
-        response.send({ error: error.massage });
+        response.send({ error: error.message });
     }
 });
 
-server.get("/swapi2", async (request, response) => {
+server.get("/planets/:id", async (request, response) => {
+    const { id } = request.params;
     try {
-        const { data } = await api.get("planets/3/");
+        const { data } = await api.get(`planets/${id}`);
         
         return response.send({ data })
     } catch (error) {
-        response.send({ error: error.massage });
+        response.send({ error: error.message });
     }
 });
 
-server.get("/swapi3", async (request, response) => {
+server.get("/starships/:id", async (request, response) => {
+    const { id } = request.params;
     try {
-        const { data } = await api.get("starships/9/");
+        const { data } = await api.get(`starships/${id}`);
         
         return response.send({ data })
     } catch (error) {
-        response.send({ error: error.massage });
+        response.send({ error: error.message });
     }
 });
